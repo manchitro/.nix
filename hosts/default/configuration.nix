@@ -93,6 +93,7 @@ in
       videoDrivers = ["nvidia"];
     };
     desktopManager.plasma6.enable = true;
+    desktopManager.plasma6.enableQt5Integration = true;
     displayManager.sddm.enable = true;
   };
 
@@ -115,13 +116,7 @@ in
     ];
     packages = with pkgs; [
       vim
-      neovim
-      kitty
-      ranger
-      tmux
-      fish
       qimgv
-      git
       keynav
       wmctrl
       xdotool
@@ -166,6 +161,7 @@ in
    nvidia-offload
    pciutils
    dmidecode
+   gcc
   ];
   environment.variables.EDITOR = "nvim";
 
