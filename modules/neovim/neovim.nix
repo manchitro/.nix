@@ -3,6 +3,8 @@
 {
   imports = [
     ./custom-mappings.nix
+    ./plugins.nix
+    ./chadrc.nix
   ];
   
   programs = {
