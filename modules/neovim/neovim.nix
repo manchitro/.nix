@@ -1,6 +1,10 @@
 { config, lib, pkgs, ... }:
 
 {
+  imports = [
+    ./custom-mappings.nix
+  ];
+  
   programs = {
     neovim = {
       enable = true;
