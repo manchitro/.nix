@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 let
-  kittyConf = builtins.readFile ./kitty.conf
+  kittyConf = builtins.readFile ./kitty.conf;
 in
 {
   programs.kitty = {

@@ -5,6 +5,8 @@
    ../../modules/fish/fish.nix
    ../../modules/ranger/ranger.nix
    ../../modules/git/git.nix
+   ../../modules/tmux/tmux.nix
+   ../../modules/kitty/kitty.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
