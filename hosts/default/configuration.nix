@@ -166,7 +166,7 @@ in
    gcc
    cmake
    ninja
-   jdk21
+   (import ../../modules/java/jdk-with-ssl.nix {inherit pkgs;})
    jdk8
    xsel
    xclip
