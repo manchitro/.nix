@@ -27,7 +27,7 @@ in
   # Bootloader.
   # boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelModules = [ "snd-hda-intel" "ec_sys" ];
+  boot.kernelModules = [ "snd-hda-intel" "ec_sys" "dkms" ];
   # boot.extraModulePackages = with config.boot.kernelPackages; [
   #   ec_sys
   # ];
@@ -136,6 +136,8 @@ in
       fzf
       findutils
       mlocate
+      protonvpn-cli
+      devbox
     ];
     shell = pkgs.fish;
   };
@@ -162,6 +164,16 @@ in
    pciutils
    dmidecode
    gcc
+   cmake
+   ninja
+   jdk21
+   jdk8
+   xsel
+   xclip
+   linuxHeaders
+   mokutil
+   bash
+   unzip
   ];
   environment.variables.EDITOR = "nvim";
 
