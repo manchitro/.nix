@@ -92,9 +92,21 @@ in
       xkb.variant = "";
       videoDrivers = ["nvidia"];
     };
+
+    # Plasma
     desktopManager.plasma6.enable = true;
     desktopManager.plasma6.enableQt5Integration = true;
     displayManager.sddm.enable = true;
+  };
+
+  programs.hyprland = {
+      enable = true;
+      xwayland.enable = true;
+  };
+
+  environment.sessionVariables = {
+      # WLR_NO_HARDWARE_CURSORS = "1";
+      NIXOS_OZONE_WL = "1";
   };
 
   # SOUND
@@ -128,7 +140,7 @@ in
       flameshot
       google-chrome
       eza
-      rofi
+      rofi-wayland
       python3
       libinput-gestures
       anydesk
@@ -138,9 +150,14 @@ in
       findutils
       mlocate
       protonvpn-cli
+      waybar
+      dunst
     ];
     shell = pkgs.fish;
   };
+
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
@@ -172,6 +189,8 @@ in
    mokutil
    bash
    unzip
+   # cargo
+   swww
   ];
   environment.variables.EDITOR = "nvim";
 
