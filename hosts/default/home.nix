@@ -56,6 +56,7 @@
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
     ".ideavimrc".source = ../../modules/.ideavimrc;
+    ".Xmodmap".source = ../../modules/.Xmodmap;
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''

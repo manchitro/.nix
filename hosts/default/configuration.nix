@@ -123,6 +123,7 @@ in
       syncthing
       obsidian
       xorg.xrandr
+      xorg.xmodmap
       curl
       flameshot
       google-chrome
@@ -137,7 +138,6 @@ in
       findutils
       mlocate
       protonvpn-cli
-      devbox
     ];
     shell = pkgs.fish;
   };
@@ -166,8 +166,6 @@ in
    gcc
    cmake
    ninja
-   jdk21
-   jdk8
    xsel
    xclip
    linuxHeaders
