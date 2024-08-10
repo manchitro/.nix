@@ -152,6 +152,9 @@ in
       protonvpn-cli
       waybar
       dunst
+      baobab
+      devbox
+      tdrop
     ];
     shell = pkgs.fish;
   };
