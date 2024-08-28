@@ -104,9 +104,6 @@ in
       xwayland.enable = true;
   };
 
-  environment.etc."profiles/per-user/s/bin/xmodmap.sh".source = ../../modules/xmodmap.sh;
-  environment.etc."profiles/per-user/s/bin/xmodmap.sh".mode = "0755";  # Set appropriate permissions
-
 
   environment.sessionVariables = {
       # WLR_NO_HARDWARE_CURSORS = "1";
@@ -159,7 +156,6 @@ in
       baobab
       devbox
       tdrop
-      inputs.idea-flake.packages.default.jetbrains.idea-ultimate
     ];
     shell = pkgs.fish;
   };
