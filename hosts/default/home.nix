@@ -8,7 +8,7 @@
    ../../modules/tmux/tmux.nix
    ../../modules/kitty/kitty.nix
    ../../modules/neovim/neovim.nix
-   # ../../modules/hypr/hypr.nix
+   ../../modules/hypr/hypr.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -58,8 +58,6 @@
     # ".screenrc".source = dotfiles/screenrc;
     ".ideavimrc".source = ../../modules/.ideavimrc;
     ".xmodmap".source = ../../modules/.Xmodmap;
-    "xmodmap.sh".source = ../../modules/xmodmap.sh;
-
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
