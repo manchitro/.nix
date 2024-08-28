@@ -159,8 +159,7 @@ in
       baobab
       devbox
       tdrop
-      self.packages.x86_64-linux.intellij-idea
-
+      inputs.idea-flake.packages.default.jetbrains.idea-ultimate
     ];
     shell = pkgs.fish;
   };
